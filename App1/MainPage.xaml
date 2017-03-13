@@ -1,0 +1,35 @@
+﻿<Page
+    x:Class="App1.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:App1"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:customCanvas="using:Microsoft.Graphics.Canvas.UI.Xaml" 
+    mc:Ignorable="d">
+
+    <Grid Background="Beige">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="2*"/>
+            <ColumnDefinition Width="2*"/>
+        </Grid.ColumnDefinitions>
+        <Image Name="imageControl" Source="Assets/1.JPG" Stretch="None"/>
+
+        <StackPanel Grid.Column="1">
+        <TextBox Name="mojTextbox"  AcceptsReturn="True" TextWrapping="Wrap" 
+         Header="Description"
+         PlaceholderText="wpisz tutaj coś............"
+         ScrollViewer.VerticalScrollBarVisibility="Auto"/>
+        <TextBox Name="moj2"/>
+            <Button Name="guzikFoto" Content="foto" Click="guzikFoto_Click"/>
+            <Button Name="emocje" Content="emocje" Click="emocje_Click" />
+        </StackPanel>
+        
+
+
+
+
+    </Grid>
+</Page>
+
+
